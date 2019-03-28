@@ -208,7 +208,7 @@ class Loader {
                 self::addDirectory($value);
             }
         }
-        else if (is_string($dir)) {
+        elseif (is_string($dir)) {
             if (!in_array($dir, self::$dirs)) self::$dirs[] = $dir;
         }
     }
